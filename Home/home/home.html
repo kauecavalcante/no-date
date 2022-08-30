@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N.O Date</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header class="header">
+
+        <a href="#" class="logo"> N.O Date </a>
+
+       
+    
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#services">serviços</a>
+            <a href="#about">sobre</a>
+            <a href="#book">Seu negocio</a>
+            <a href="#review">Funcionalidades</a>
+        </nav>
+    
+        <div class="icons">
+            <!-- <div class="fas fa-moon" id="theme-btn"></div> -->
+             <div class="fas fa-user" id="login-btn"></div> 
+             <div id="menu-btn" class="fas fa-bars"></div>
+         </div>
+
+        <!---- CADASTRO ----->
+        <form action="" class="login-form">
+
+            <div class="inputBox">
+                <span>Nome do usuário</span>
+                <input type="text" placeholder="Digite seu nome">
+            </div>
+    
+            <div class="inputBox">
+                <span>Senha</span>
+                <input type="password" placeholder="Digite sua senha">
+            </div>
+    
+            <div class="remember">
+                <a href="../Cadastre-se/cadastrese.html" class="novo">Cadastre-se</a>
+            </div>
+    
+            <input type="submit" class="btn" value="login">
+    
+        </form>
+    
+    </header>
+</body>
+<script>
+    let menu = document.querySelector('#menu-btn');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+}
+
+///////////////////////
+let loginForm = document.querySelector('.login-form')
+
+document.querySelector('#login-btn').onclick = () =>{
+    loginForm.classList.toggle('active');
+    navbar.classList.remove('active');
+    searchForm.classList.remove('active');
+
+    let menu = document.querySelector('#menu-btn');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+}
+
+window.onscroll = () =>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+}
+}
+
+</script>
+</html>
